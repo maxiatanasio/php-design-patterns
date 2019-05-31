@@ -1,0 +1,17 @@
+{
+    "name": "maxiatanasio/php-design-patterns",
+    "description": "PHP OOP Design patterns examples",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Maxi Atanasio",
+            "email": "maximilianoatanasio@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Creational\\": "creational/"
+        }
+    },
+    "require": {}
+}
