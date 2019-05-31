@@ -17,34 +17,16 @@ class RobotBuilderDirector
 {
 
     /**
-     * @var RobotBuilderInterface
-     */
-    private $robotBuilder;
-
-    /**
-     * RobotBuilderDirector constructor.
      * @param RobotBuilderInterface $robotBuilder
+     * @return Robot
      */
-    public function __construct(RobotBuilderInterface $robotBuilder)
-    {
-        $this->robotBuilder = $robotBuilder;
-    }
+    public function makeRobot(RobotBuilderInterface $robotBuilder) {
+        $robotBuilder->buildRobotHead();
+        $robotBuilder->buildRobotTorso();
+        $robotBuilder->buildRobotArms();
+        $robotBuilder->buildRobotLegs();
 
-    /**
-     * @return mixed
-     */
-    public function getRobot() {
-        return $this->robotBuilder->getRobot();
-    }
-
-    /**
-     *
-     */
-    public function makeRobot() {
-        $this->robotBuilder->buildRobotHead();
-        $this->robotBuilder->buildRobotTorso();
-        $this->robotBuilder->buildRobotArms();
-        $this->robotBuilder->buildRobotLegs();
+        return $robotBuilder->getRobot();
     }
 
 
