@@ -33,6 +33,10 @@ The Robot class is the generic Robot model with it's head, torso, arms and legs 
 The SuperRobotBuilder class sets how this particular type of Robot is made. This defines a 
 robot "model".
 
+#### FlyRobotBuilder
+
+The FlyRobotBuilder class is another type builder that creates another type of robot 
+
 #### RobotBuilderDirector
 
 The RobotBuilderDirectorClass knows how a Robot should be made and the steps needed.
